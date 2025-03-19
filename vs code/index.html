@@ -1,35 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Slider</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Main container for the slider -->
     <div class="container">
-        <div class="top">
-        <img src="/photos/left-arrow.png" class="arrow left">
 
+      <!-- Top section containing the slider and navigation arrows -->
+      <div class="top">
+
+        <!-- Left navigation arrow -->
+        <img src="/photos/left-arrow.png" class="arrow left" />
+
+        <!-- Frame to hold the sliding images -->
         <div class="frame">
-            <div class="slider">
-                <img src="/photos/america.jpg" class="image">
-                <img src="/photos/australia.jpg" class="image">
-                <img src="/photos/france1.jpg" class="image">
-                <img src="/photos/japan1.jpg" class="image">
-                <img src="/photos/south korea.jpg" class="image">
-                <img src="/photos/spain.jpg" class="image">
+          <div class="slider">
+            <!-- Image slides -->
+            <img src="/photos/america.jpg" class="image" />
+            <img src="/photos/australia.jpg" class="image" />
+            <img src="/photos/france1.jpg" class="image" />
+            <img src="/photos/japan1.jpg" class="image" />
+            <img src="/photos/south korea.jpg" class="image" />
+            <img src="/photos/spain.jpg" class="image" />
+          </div> <!-- End of slider -->
+        </div> <!-- End of frame -->
 
-            </div><!--end of slider-->
-        </div><!--end of frame-->
+        <!-- Right navigation arrow -->
+        <img src="/photos/right-arrow.png" class="arrow right" />
+      </div> <!-- End of top section -->
 
-        <img src="/photos/right-arrow.png" class="arrow right">
-    </div><!--end of top-->
-    <div class="bottom">
-        
-    </div><!--end of bottom-->
-    </div><!--end of container-->
+      <!-- Bottom section (can be used for additional content like indicators, captions, etc.) -->
+      <div class="bottom"> 
+      </div> <!-- End of bottom section -->
 
+    </div> <!-- End of container -->
+
+    <!-- Link to external JavaScript file for slider functionality -->
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
