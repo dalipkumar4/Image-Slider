@@ -1,18 +1,21 @@
+/* Reset default padding, margin, and ensure consistent box-sizing */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/* Styling for the body to center content and set background color */
 body {
     background-color: #8e9ca1;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100vh; /* Full viewport height */
 
 }
 
+/* Container to hold the slider and navigation arrows */
 .container {
     display: flex;
     align-items: center;
@@ -20,6 +23,7 @@ body {
     flex-direction: column;
 }
 
+/* Top section containing navigation arrows and frame */
 .top {
     display: flex;
     align-items: center;
@@ -27,20 +31,23 @@ body {
 
 }
 
+/* Styling for navigation arrows */
 .arrow{
     height: 80px;
     cursor: pointer;
 }
 
+/* Frame that contains the slider images */
 .frame{
     width: 60vw;
     height: 75vh;
-    overflow: hidden;
+    overflow: hidden; /* Hide overflowing images */
     display: flex;
     align-items: center;
-    box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.5); /* Adding shadow for better appearance */
 }
 
+/* Individual images inside the slider */
 .image{
     height: 100%;
     width: 100%;
@@ -48,11 +55,13 @@ body {
     top: 10px;
 }
 
+/* The slider container to transition between images */
 .slider{
     display: flex;
-    transition: all 1s ease;
+    transition: all 1s ease; /* Smooth transition effect */
 }
 
+/* Bottom section containing navigation buttons */
 .bottom{
     display: flex;
     gap: 25px;
@@ -60,6 +69,7 @@ body {
     bottom: 15px;
 }
 
+/* Small circular buttons for image selection */
 .button {
     width: 15px;
     height: 15px;
@@ -69,25 +79,31 @@ body {
 
 }
 
-
+/* Responsive styles for screens smaller than 900px */
 @media (max-width: 900px){
-
+    /* Change background color for smaller screens */
     body{
         background-color: rgb(35, 43, 54);
     }
-
+    
+    /* Reduce gap between elements in the top section */
     .top{
         gap: 15px;
     }
 
+    /* Reduce size of navigation arrows */
     .arrow{
         height: 50px;
     }
+
+    /* Adjust frame height for smaller screens */
     .frame{
         display: flex;
         
         height: 18vh;
     }
+
+    /* Reduce size of navigation buttons */
     .button{
         height: 7px;
         width: 7px;
